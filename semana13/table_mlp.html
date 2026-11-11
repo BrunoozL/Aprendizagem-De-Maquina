@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Cenários de Machine Learning</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+            white-space: nowrap; /* Evita quebra de linha em células como as de arquitetura */
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: 600;
+            color: #555;
+        }
+        tr:nth-child(even) {
+            background-color: #fbfbfb;
+        }
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+        /* Centraliza o cenário para melhor visualização */
+        td:first-child {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabela de Cenários de Teste</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cenário</th>
+                <th>Otimizador</th>
+                <th>Arquitetura</th>
+                <th>Regularização</th>
+                <th>Função de Ativação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>SGD (lr=0.01)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Pequena: [50, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Média: [50, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Sem regularização</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Dropout (p=0.1)</td>
+                <td>Tanh</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>ReLU</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Adam (lr=0.001)</td>
+                <td>Grande: [50, 256, 128, 64, 4]</td>
+                <td>Penalização L2 (&lambda; = 0.001)</td>
+                <td>Tanh</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
